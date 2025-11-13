@@ -1,76 +1,21 @@
-import React from 'react'
-import { Link, NavLink as RouterNavLink } from 'react-router-dom'
-import styled from 'styled-components'
-
-const Nav = styled.nav`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-`
-
-const NavContainer = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
-
-const Logo = styled(Link)`
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: opacity 0.3s;
-
-  &:hover {
-    opacity: 0.8;
-  }
-`
-
-const NavLinks = styled.ul`
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-`
-
-const StyledNavLink = styled(RouterNavLink)`
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-  }
-
-  &.active {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-`
+import { Link, NavLink } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <Nav>
-      <NavContainer>
-        <Logo to="/">React Multi-Site</Logo>
-        <NavLinks>
+    <nav className="nav">
+      <div className="nav-container">
+        <Link to="/" className="logo">React Multi-Site</Link>
+        <ul className="nav-links">
           <li>
-            <StyledNavLink to="/">Home</StyledNavLink>
+            <NavLink to="/" className="nav-link">Home</NavLink>
           </li>
           <li>
-            <StyledNavLink to="/about">About</StyledNavLink>
+            <NavLink to="/about" className="nav-link">About</NavLink>
           </li>
-        </NavLinks>
-      </NavContainer>
-    </Nav>
+        </ul>
+      </div>
+    </nav>
   )
 }
 
 export default Navbar
-
