@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
 function About() {
-  const [count, setCount] = useState(0)
   const [isToggled, setIsToggled] = useState(false)
 
   return (
@@ -14,18 +13,8 @@ function About() {
           React Router to navigate between different pages.
         </p>
         <p className="paragraph">
-          Below are some simple React components that use state.
+          Below is a simple React component that uses state.
         </p>
-      </div>
-
-      <div className="counter-box">
-        <h2 className="counter-title">Counter</h2>
-        <div className="counter-display">{count}</div>
-        <div>
-          <button className="button" onClick={() => setCount(count - 1)}>Decrease</button>
-          <button className="button" onClick={() => setCount(0)}>Reset</button>
-          <button className="button" onClick={() => setCount(count + 1)}>Increase</button>
-        </div>
       </div>
 
       <div className="toggle-box">
