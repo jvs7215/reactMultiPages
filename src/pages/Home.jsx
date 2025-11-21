@@ -6,11 +6,10 @@ function Home() {
       
       <div className="content">
         <p className="paragraph">
-          This website was built using React and React Router. It has multiple pages
-          that you can navigate between using the menu at the top.
+          This website was built using React and React Router. Learn more by exploring the pages above.
         </p>
         <p className="paragraph">
-          Check out the About page to see some interactive components!
+          Check out the About page to see some interactive components.
         </p>
       </div>
     </div>

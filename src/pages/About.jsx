@@ -9,8 +9,7 @@ function About() {
       
       <div className="content">
         <p className="paragraph">
-          This is a React application with multiple pages. I'm learning how to use
-          React Router to navigate between different pages.
+          I'm learning how to use React Router to navigate between different pages.
         </p>
         <p className="paragraph">
           Below is a simple React component that uses state.
@@ -24,7 +23,7 @@ function About() {
         </button>
         {isToggled && (
           <p className="message">
-            This message appears when you click the button!
+            This message appears when you click the button~
           </p>
         )}
       </div>
