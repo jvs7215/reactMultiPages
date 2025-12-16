@@ -1,15 +1,17 @@
+import CloudScene from '../components/CloudScene'
+
 function Home() {
   return (
     <div className="container">
-      <h1 className="title">Welcome to My React Site</h1>
-      <p className="subtitle">This is a multi-page React application</p>
-      
+      <h1 className="title">Jessica Salemme</h1>
+      <p className="subtitle">Web Development Portfolio</p>
+
       <div className="content">
         <p className="paragraph">
-          This website was built using React and React Router. Learn more by exploring the pages above.
+          Welcome to my portfolio website. This site showcases my web development projects and demonstrates my skills with interactive technologies including React, JavaScript, ThreeJS, SVG, and CSS animations.
         </p>
         <p className="paragraph">
-          Check out the About page to see some interactive components.
+          Explore the Projects page to see my work, including a digitization resource guide and interactive web applications.
         </p>
       </div>
     </div>
